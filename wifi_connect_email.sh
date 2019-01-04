@@ -23,5 +23,5 @@ if [ $? != 0 ]; then
     body="$body $external_ip"
 
     EMAIL='youremailaddress@yourdomain.com'
-    echo 'Test stuff' | mailx -s "IP Addresses: $body" $EMAIL
+    echo "$body" | mailx -s "IP Addresses" $EMAIL
 fi
